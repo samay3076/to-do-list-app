@@ -1,0 +1,175 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #1a1a1a;
+  margin: 0;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select,
+input[type="datetime-local"] {
+  padding: 8px 12px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="datetime-local"]:focus {
+  border-color: #666;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.3);
+}
+
+input[type="text"] {
+  flex: 1;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #333;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateX(4px);
+  background: #404040;
+}
+
+.task-content {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.task-title {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.task-details {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.priority-badge:hover {
+  transform: scale(1.05);
+}
+
+.priority-high {
+  background: #422323;
+  color: #ff8080;
+}
+
+.priority-medium {
+  background: #423d23;
+  color: #ffd780;
+}
+
+.priority-low {
+  background: #233d23;
+  color: #80ff80;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete-btn {
+  background: #dc3545;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4CAF50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.1);
+}
+
+.reminder {
+  color: #888;
+  font-size: 12px;
+  margin-left: 8px;
+}
